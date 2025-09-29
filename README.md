@@ -21,6 +21,7 @@ This is my personal portfolio website, built to showcase my **projects**, **expe
 
 ## 📂 Project Structure
 
+```bash
 src/
 ├── app/ # Next.js 15 app router
 │ ├── components/ # Reusable components (Navbar, Hero, etc.)
@@ -28,3 +29,4 @@ src/
 ├── components/ # Shared UI components
 ├── styles/ # Global styles (globals.css, themes)
 └── public/ # Static assets (icons, images, resume)
+```
