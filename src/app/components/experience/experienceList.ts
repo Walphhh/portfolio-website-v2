@@ -1,4 +1,4 @@
-type experienceType = "work" | "non-work";
+export type experienceType = "work" | "non-work";
 
 export type Month =
   | "jan"
