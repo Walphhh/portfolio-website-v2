@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      <Fullscreen className="font-Figtree relative z-9 px-10 flex items-center justify-center">
+      <Fullscreen className="font-Figtree relative z-9 px-10 flex align-middle items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ const Hero = () => {
               {/* vertical separator */}
               <Separator
                 orientation="vertical"
-                className="hidden md:flex min-h-60 min-w-1.5 bg-[var(--default-font)] rounded-4xl drop-shadow-lg"
+                className="hidden md:bg-[var(--default-font)] md:flex md:min-h-60 md:min-w-1.5 md:rounded-4xl md:drop-shadow-lg"
               />
 
               {/* avatar */}
@@ -88,7 +88,7 @@ const Hero = () => {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                className={`my-0 p-1.5 w-fit h-fit rounded-full drop-shadow-lg ${
+                className={`hidden md:block my-0 p-1.5 w-fit h-fit rounded-full drop-shadow-lg ${
                   hovered ? `bg-[var(--accent)]` : `bg-[var(--default-font)]`
                 } `}
                 onMouseEnter={() => setHovered(true)}
