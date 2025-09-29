@@ -16,6 +16,7 @@ export const projects: ProjectCard[] = [
     description:
       "Personal homelab using Proxmox to manage virtualised OS and containers. Experimented with containerised apps, service monitoring, and infrastructure automation.",
     tags: ["Proxmox", "Docker", "Linux", "DevOps"],
+    imgSrc: "/project-snapshots/proxmox.png",
   },
   {
     title: "Organisation Website (FSS MQU)",
@@ -49,7 +50,7 @@ export const projects: ProjectCard[] = [
   {
     title: "Blogging Website",
     description:
-      "Full-stack blogging platform with React+ChakraUI frontend and Node.js+Express backend. MongoDB for persistence and JWT authentication.",
+      "Basic full-stack blogging platform with React+ChakraUI frontend and Node.js+Express backend. MongoDB for persistence and JWT authentication.",
     imgSrc: "/project-snapshots/blogsite.png",
     tags: ["React", "ChakraUI", "Node.js", "Express", "MongoDB"],
     liveUrl: "https://walphhh.github.io/personal-blog/",
@@ -76,9 +77,9 @@ export const projects: ProjectCard[] = [
     title: "Portfolio Website v2",
     description:
       "Responsive developer portfolio built with Next.js and Tailwind. Designed in Figma and deployed online with docker and a personal linux server to showcase projects.",
-    imgSrc: "/project-snapshots/portfolio.png",
+    imgSrc: "/project-snapshots/portfolio-v2.png",
     tags: ["React", "Typescript", "Tailwind", "Linux", "Docker"],
-    githubUrl: "https://github.com/Walphhh/personal-portfolio",
+    githubUrl: "https://github.com/Walphhh/portfolio-website-v2",
   },
   {
     title: "Christmas Card",
