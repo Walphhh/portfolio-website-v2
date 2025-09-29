@@ -11,128 +11,214 @@ import {
   SiVite,
   SiCanva,
   SiFigma,
+  SiShadcnui,
+  SiFlutter,
+  SiDart,
+  SiDocker,
+  SiLinux,
+  SiGithubactions,
+  SiProxmox,
+  SiC,
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiSupabase,
+  SiFlask,
+  SiWireshark,
+  SiGit,
 } from "react-icons/si";
 import { FaBootstrap, FaJava } from "react-icons/fa";
 import { IconType } from "react-icons/lib";
 
-export type TechnologyType =
-  | "all"
-  | "frontend"
+export type TechnologyTag =
+  | "language"
   | "framework"
+  | "library"
+  | "frontend"
   | "backend"
+  | "tool"
   | "design"
-  | "language";
+  | "devops"
+  | "database"
+  | "cybersecurity";
 
-export type ProficiencyType = 1 | 2 | 3 | 4;
-export interface TechnologyCardProps {
+export type ProficiencyLevel = "familiar" | "comfortable" | "proficient";
+
+export interface Technology {
   name: string;
   icon: IconType;
-  proficiency: ProficiencyType;
-  type: TechnologyType;
+  proficiency: ProficiencyLevel;
+  tags: TechnologyTag[];
 }
 
-export const proficiencyBg = [
+export const technologyList: Technology[] = [
+  // Languages
   {
-    key: 1,
-    bg: "bg-[#ffc4b6]",
-  },
-  {
-    key: 2,
-    bg: "bg-[#ffe0b6]",
-  },
-  {
-    key: 3,
-    bg: "bg-[#C5F5B9]",
-  },
-  {
-    key: 4,
-    bg: "bg-[#B6D3FF]",
-  },
-];
-
-export const technologyList: TechnologyCardProps[] = [
-  {
-    name: "Typescript",
+    name: "TypeScript",
     icon: SiTypescript,
-    proficiency: 4,
-    type: "language",
+    proficiency: "proficient",
+    tags: ["language"],
   },
   {
-    name: "Javascript",
+    name: "JavaScript",
     icon: SiJavascript,
-    proficiency: 1,
-    type: "language",
+    proficiency: "familiar",
+    tags: ["language"],
   },
-  {
-    name: "Java",
-    icon: FaJava,
-    proficiency: 1,
-    type: "language",
-  },
+  { name: "Java", icon: FaJava, proficiency: "familiar", tags: ["language"] },
   {
     name: "Python",
     icon: SiPython,
-    proficiency: 1,
-    type: "language",
+    proficiency: "familiar",
+    tags: ["language"],
   },
+  { name: "C", icon: SiC, proficiency: "familiar", tags: ["language"] },
+  { name: "Dart", icon: SiDart, proficiency: "familiar", tags: ["language"] },
   {
     name: "HTML",
     icon: SiHtml5,
-    proficiency: 2,
-    type: "language",
+    proficiency: "comfortable",
+    tags: ["language", "frontend"],
   },
   {
     name: "CSS",
     icon: SiCss3,
-    proficiency: 2,
-    type: "language",
+    proficiency: "comfortable",
+    tags: ["language", "frontend"],
   },
+
+  // Frontend
   {
     name: "React",
     icon: SiReact,
-    proficiency: 3,
-    type: "frontend",
+    proficiency: "proficient",
+    tags: ["frontend", "library"],
   },
+  {
+    name: "Next.js",
+    icon: SiNextdotjs,
+    proficiency: "comfortable",
+    tags: ["frontend", "framework"],
+  },
+  {
+    name: "Flutter",
+    icon: SiFlutter,
+    proficiency: "familiar",
+    tags: ["frontend", "framework"],
+  },
+
+  // Backend
   {
     name: "NodeJS",
     icon: SiNodedotjs,
-    proficiency: 2,
-    type: "backend",
+    proficiency: "familiar",
+    tags: ["backend", "framework"],
   },
+  {
+    name: "Express",
+    icon: SiExpress,
+    proficiency: "comfortable",
+    tags: ["backend", "framework"],
+  },
+  {
+    name: "Flask",
+    icon: SiFlask,
+    proficiency: "familiar",
+    tags: ["backend", "framework"],
+  },
+
+  // Databases
+  {
+    name: "MongoDB",
+    icon: SiMongodb,
+    proficiency: "familiar",
+    tags: ["database"],
+  },
+  {
+    name: "Supabase",
+    icon: SiSupabase,
+    proficiency: "comfortable",
+    tags: ["backend", "tool", "database"],
+  },
+
+  // Frameworks / Styling
   {
     name: "Tailwind",
     icon: SiTailwindcss,
-    proficiency: 2,
-    type: "framework",
+    proficiency: "comfortable",
+    tags: ["frontend", "framework"],
+  },
+  {
+    name: "Shadcn",
+    icon: SiShadcnui,
+    proficiency: "proficient",
+    tags: ["frontend", "library"],
   },
   {
     name: "Bootstrap",
     icon: FaBootstrap,
-    proficiency: 1,
-    type: "framework",
+    proficiency: "familiar",
+    tags: ["frontend", "library"],
   },
   {
     name: "Chakra",
     icon: SiChakraui,
-    proficiency: 1,
-    type: "framework",
+    proficiency: "familiar",
+    tags: ["frontend", "library"],
   },
-  {
-    name: "Vite",
-    icon: SiVite,
-    proficiency: 2,
-    type: "framework",
-  },
+  { name: "Vite", icon: SiVite, proficiency: "familiar", tags: ["tool"] },
+
+  // Design
   {
     name: "Canva",
     icon: SiCanva,
-    proficiency: 2,
-    type: "design",
+    proficiency: "comfortable",
+    tags: ["tool", "design"],
   },
   {
     name: "Figma",
     icon: SiFigma,
-    proficiency: 2,
-    type: "design",
+    proficiency: "comfortable",
+    tags: ["tool", "design"],
+  },
+
+  // DevOps / Tools
+  {
+    name: "Git",
+    icon: SiGit,
+    proficiency: "comfortable",
+    tags: ["tool", "devops"],
+  },
+  {
+    name: "Docker",
+    icon: SiDocker,
+    proficiency: "comfortable",
+    tags: ["tool", "devops"],
+  },
+  {
+    name: "Linux",
+    icon: SiLinux,
+    proficiency: "comfortable",
+    tags: ["tool", "devops"],
+  },
+  {
+    name: "GitHub Actions",
+    icon: SiGithubactions,
+    proficiency: "familiar",
+    tags: ["tool", "devops"],
+  },
+  {
+    name: "Proxmox",
+    icon: SiProxmox,
+    proficiency: "comfortable",
+    tags: ["tool", "devops"],
+  },
+
+  // Cybersecurity
+  {
+    name: "Wireshark",
+    icon: SiWireshark,
+    proficiency: "familiar",
+    tags: ["cybersecurity", "tool"],
   },
 ];

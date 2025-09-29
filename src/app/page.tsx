@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Experience from "./components/experience/Experience";
 import ParallaxOverlay from "@/components/parallax-overlay";
 import { useTheme } from "next-themes";
+import Technologies from "./components/technologies/Technologies";
 
 export default function Home() {
   const { resolvedTheme } = useTheme();
@@ -28,6 +29,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <Experience />
+        <Technologies />
       </div>
     </div>
   );
