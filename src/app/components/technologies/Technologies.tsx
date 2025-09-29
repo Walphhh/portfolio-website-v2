@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { technologyList, Technology, TechnologyTag } from "./technologyList";
+import { technologyList, TechnologyTag } from "./technologyList";
 import ProficiencyBadge from "./proficiency-badge";
 import Fullscreen from "@/components/Fullscreen";
+import FilterMenu from "./filter-menu";
 
 const filterTags: (TechnologyTag | "all")[] = [
   "all",
@@ -14,6 +15,8 @@ const filterTags: (TechnologyTag | "all")[] = [
   "library",
   "tool",
   "design",
+  "database",
+  "cybersecurity",
 ];
 
 export default function Technologies() {
@@ -26,29 +29,19 @@ export default function Technologies() {
       : technologyList.filter((tech) => tech.tags.includes(selectedTag));
 
   return (
-    <Fullscreen>
+    <Fullscreen className="">
       <section id="technologies" className="py-10 flex flex-col items-center">
-        <h2 className="text-3xl font-bold mb-6">Technologies</h2>
+        <h2 className="text-4xl font-bold mb-6 underline">Technologies</h2>
 
-        {/* Filter buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
-          {filterTags.map((tag) => (
-            <button
-              key={tag}
-              onClick={() => setSelectedTag(tag)}
-              className={`px-4 py-2 rounded-lg drop-shadow transition-colors hover-pointer ${
-                selectedTag === tag
-                  ? "bg-accent text-white border-accent"
-                  : "bg-[var(--layer-1)] border-gray-300 hover:bg-accent hover:text-white"
-              }`}
-            >
-              {tag.charAt(0).toUpperCase() + tag.slice(1)}
-            </button>
-          ))}
-        </div>
+        {/* Extracted FilterMenu */}
+        <FilterMenu
+          filterTags={filterTags}
+          selectedTag={selectedTag}
+          setSelectedTag={setSelectedTag}
+        />
 
         {/* Technology grid */}
-        <div className="grid px-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        <div className="grid px-5 grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {filtered.map((tech) => {
             const Icon = tech.icon;
             return (
