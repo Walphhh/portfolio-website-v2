@@ -65,7 +65,7 @@ export const projects: ProjectCard[] = [
     githubUrl: "https://github.com/Walphhh/Genshin-Encylopedia",
   },
   {
-    title: "Portfolio Website",
+    title: "Portfolio Website v1",
     description:
       "Responsive developer portfolio built with React and Tailwind. Designed in Figma and deployed online to showcase projects.",
     imgSrc: "/project-snapshots/portfolio.png",
@@ -73,17 +73,19 @@ export const projects: ProjectCard[] = [
     githubUrl: "https://github.com/Walphhh/personal-portfolio",
   },
   {
+    title: "Portfolio Website v2",
+    description:
+      "Responsive developer portfolio built with Next.js and Tailwind. Designed in Figma and deployed online with docker and a personal linux server to showcase projects.",
+    imgSrc: "/project-snapshots/portfolio.png",
+    tags: ["React", "Typescript", "Tailwind", "Linux", "Docker"],
+    githubUrl: "https://github.com/Walphhh/personal-portfolio",
+  },
+  {
     title: "Christmas Card",
-    description: "Sharing the holiday spirit with an online card :3",
+    description: "Sharing the holiday spirit with an online card",
     imgSrc: "/project-snapshots/christmas_card.png",
     tags: ["React"],
     liveUrl: "https://walphhh.github.io/for-friends/",
     githubUrl: "https://github.com/Walphhh/for-friends",
-  },
-  {
-    title: "Organisation Dashboard",
-    description:
-      "In-progress admin dashboard for FSS Macquarie University. Built with Next.js and MongoDB to streamline society workflows.",
-    tags: ["Next.js", "MongoDB", "Typescript"],
   },
 ];
