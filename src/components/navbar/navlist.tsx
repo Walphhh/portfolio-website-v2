@@ -6,8 +6,8 @@ interface NavItem {
 
 // Declaring Nav Items in a list
 export const NavList: NavItem[] = [
-  { name: "Home", linkTo: "/" },
+  { name: "Home", sectionID: "hero" },
   { name: "Projects", sectionID: "projects" },
+  { name: "Technologies", sectionID: "technologies" },
   { name: "Contact", sectionID: "contact" },
-  { name: "About", linkTo: "about" },
 ];
