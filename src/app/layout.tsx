@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
 import { ThemeProvider } from "next-themes";
 import Footer from "@/components/footer";
 
@@ -25,7 +24,6 @@ export default function RootLayout({
         className={`bg-[var(--layer-0)] text-[var(--default-font)] ${figtree.className} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
-          <Navbar />
           {children}
           <Footer />
         </ThemeProvider>

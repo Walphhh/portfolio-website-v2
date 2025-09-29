@@ -1,7 +1,7 @@
 "use client";
 
 import Fullscreen from "@/components/Fullscreen";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 export default function Contact() {
   return (

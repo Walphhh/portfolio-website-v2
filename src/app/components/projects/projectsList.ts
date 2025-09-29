@@ -23,7 +23,7 @@ export const projects: ProjectCard[] = [
     description:
       "Fully responsive society website built with Next.js and Figma designs. Integrated backend handling for forms and reCAPTCHA for spam protection.",
     tags: ["Next.js", "Typescript", "Tailwind", "Node.js"],
-    githubUrl: "https://github.com/Walphhh/fss-website",
+    githubUrl: "https://github.com/Walphhh/fssmqu-website",
   },
   {
     title: "Mobile Food Review App (Foodify)",

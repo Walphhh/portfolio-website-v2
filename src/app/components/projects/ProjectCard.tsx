@@ -8,7 +8,8 @@ import {
   CardTitle,
 } from "@shadcn-ui/card";
 import { Button } from "@shadcn-ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 import DisplayTags from "../DisplayTags";
 import Image from "next/image";
 
@@ -53,7 +54,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         {props.githubUrl && (
           <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">
             <Button className="hover:cursor-pointer">
-              <Github />
+              <SiGithub />
               Github
             </Button>
           </a>
