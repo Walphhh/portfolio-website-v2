@@ -120,6 +120,12 @@
   --accent: oklch(0.7304 0.1864 52.57);
 }
 
+/* Apply to all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+}
+
 .bg-overlay {
   background-image: url("/public/blob_group.png");
   background-attachment: fixed;
