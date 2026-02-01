@@ -44,6 +44,22 @@ export interface ExperienceCard {
 export const ExperienceList: ExperienceCard[] = [
   {
     experienceType: "work",
+    position: "Lead Developer",
+    company: "FrankView",
+    companyLogo: "/icons/frankview_minimised.png",
+    location: "Sydney, Australia",
+    description:
+      "Led the end-to-end development of a client-facing family-law mediation platform, working directly with the founder to deliver a production-ready full-stack application. Implemented secure backend logic, role-based access control, and data models, while managing deployment workflows and iterative feature releases based on stakeholder feedback.",
+    duration: {
+      startDate: {
+        year: 2025,
+        month: "dec",
+      },
+      endDate: "present",
+    },
+  },
+  {
+    experienceType: "work",
     position: "Project Manager & Lead Developer (WIL)",
     company: "SOPREMA",
     companyLogo: "/icons/soprema_logo.jpg",
@@ -55,7 +71,10 @@ export const ExperienceList: ExperienceCard[] = [
         year: 2025,
         month: "aug",
       },
-      endDate: "present",
+      endDate: {
+        year: 2025,
+        month: "nov",
+      },
     },
   },
   {
@@ -104,7 +123,10 @@ export const ExperienceList: ExperienceCard[] = [
         year: 2025,
         month: "feb",
       },
-      endDate: "present",
+      endDate: {
+        year: 2025,
+        month: "nov",
+      },
     },
   },
   {
@@ -120,7 +142,10 @@ export const ExperienceList: ExperienceCard[] = [
         year: 2025,
         month: "jan",
       },
-      endDate: "present",
+      endDate: {
+        year: 2025,
+        month: "dec",
+      },
     },
     positions: [
       {
