@@ -19,21 +19,39 @@ export const projects: ProjectCard[] = [
     imgSrc: "/project-snapshots/proxmox.png",
   },
   {
-    title: "Organisation Website (FSS MQU)",
+    title: "LikeThat – Music Discovery Platform",
     description:
-      "Fully responsive society website built with Next.js and Figma designs. Integrated backend handling for forms and reCAPTCHA for spam protection.",
-    tags: ["Next.js", "Typescript", "Tailwind", "Node.js"],
-    githubUrl: "https://github.com/Walphhh/fssmqu-website",
+      "Full-stack SaaS-style music discovery platform focused on similarity-based recommendations. Built with a modern React/Next.js frontend and Supabase backend, integrating third-party music APIs for dynamic content.",
+    tags: ["Next.js", "React", "Typescript", "Supabase", "Figma"],
+    githubUrl: "https://github.com/Walphhh/likethat", // update if different
+    liveUrl: "https://likethat.ralphlab.cc/",
+    imgSrc: "/project-snapshots/likethat.png",
   },
   {
     title: "Mobile Food Review App (Foodify)",
     description:
       "Flutter app for posting and browsing food reviews. Integrated Supabase backend for authentication, data handling, and media uploads.",
     imgSrc: "/project-snapshots/foodify.png",
-    tags: ["Flutter", "Dart", "Supabase", "University"],
+    tags: ["Flutter", "Dart", "Supabase", "University", "Figma"],
     githubUrl:
       "https://github.com/Walphhh/mobile-application-development-Walphhh-main",
     options: "zoomed-in",
+  },
+  {
+    title: "SopraSpec – Specification Management Platform",
+    description:
+      "Industry-sponsored web platform developed during a Work Integrated Learning project. Focused on generating and managing product specifications, with an emphasis on structured data, maintainability, and CI/CD workflows.",
+    tags: ["Next.js", "Typescript", "Github Actions", "Docker"],
+    liveUrl: "https://sopraspec.ralphlab.cc/",
+    imgSrc: "/project-snapshots/sopraspec.png",
+    githubUrl: "https://github.com/Walphhh/SopraSpec",
+  },
+  {
+    title: "Organisation Website (FSS MQU)",
+    description:
+      "Fully responsive society website built with Next.js and Figma designs. Integrated backend handling for forms and reCAPTCHA for spam protection.",
+    tags: ["Next.js", "Typescript", "Tailwind", "Node.js", "Figma"],
+    githubUrl: "https://github.com/Walphhh/fssmqu-website",
   },
   {
     title: "Web Application Security Assessment",
@@ -52,7 +70,7 @@ export const projects: ProjectCard[] = [
     description:
       "Basic full-stack blogging platform with React+ChakraUI frontend and Node.js+Express backend. MongoDB for persistence and JWT authentication.",
     imgSrc: "/project-snapshots/blogsite.png",
-    tags: ["React", "ChakraUI", "Node.js", "Express", "MongoDB"],
+    tags: ["React", "ChakraUI", "Node.js", "Express", "MongoDB", "Canva"],
     liveUrl: "https://walphhh.github.io/personal-blog/",
     githubUrl: "https://github.com/Walphhh/personal-blog",
   },

@@ -18,4 +18,7 @@ export type TagTypes =
   | "Proxmox"
   | "DevOps"
   | "University"
-  | "Docker";
+  | "Docker"
+  | "Github Actions"
+  | "Figma"
+  | "Canva";
