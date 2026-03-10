@@ -1,32 +1,17 @@
-name: CI + Docker Build
+name: Docker Publish
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
 
 permissions:
   contents: read
   packages: write
 
-on:
-  push:
-    branches:
-      - main
-      - master
-  pull_request:
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - run: npm ci
-      - run: npm run lint --if-present
-      - run: npm run build
-
   docker:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
