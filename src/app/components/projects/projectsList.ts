@@ -28,6 +28,15 @@ export const projects: ProjectCard[] = [
     imgSrc: "/project-snapshots/likethat.png",
   },
   {
+    title: "Human Bingo",
+    description:
+      "A browser-based social game designed for events and orientations where players complete bingo boards by interacting with others who match different prompts. The application manages game boards, player progress, and real-time interactions to encourage engagement and networking.",
+    tags: ["React", "Typescript", "Tailwind", "Supabase"],
+    imgSrc: "/project-snapshots/humanbingo.png",
+    githubUrl: "https://github.com/Walphhh/human-bingo",
+    liveUrl: "https://human-bingo.ralphlab.cc/",
+  },
+  {
     title: "Mobile Food Review App (Foodify)",
     description:
       "Flutter app for posting and browsing food reviews. Integrated Supabase backend for authentication, data handling, and media uploads.",
